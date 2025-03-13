@@ -9,7 +9,8 @@ await animeCards(fetchAnime, swiperWrapper);
 // Then initialize swiper
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
-  slidesPerView: 3,
+  slidesPerView: 5,
+  autoplay: true,
   loop: true,
   pagination: {
     el: ".swiper-pagination",

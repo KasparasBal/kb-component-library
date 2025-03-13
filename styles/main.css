@@ -3,12 +3,17 @@
 /* COMPONENTS */
 @import url(./components/animeCard.css);
 @import url(./components/swiper.css);
+@import url(./components/nav.css);
+@import url(./utils.css);
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "lato", sans-serif;
+}
+body {
+  background-color: #1e2027;
 }
 
 .main-container {
