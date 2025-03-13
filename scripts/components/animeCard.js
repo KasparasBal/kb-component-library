@@ -2,6 +2,9 @@ export const animeCards = async (animeList, parentContainer) => {
   const animeObjectArray = await animeList();
   console.log(animeObjectArray);
   animeObjectArray.data.map((anime) => {
+    //swiper slide
+    const slide = document.createElement("div");
+    slide.classList.add("swiper-slide");
     //Anime Card
     const animeCard = document.createElement("div");
     animeCard.classList.add("anime-card");
@@ -57,7 +60,10 @@ export const animeCards = async (animeList, parentContainer) => {
     animeCardContentContainer.appendChild(animeDescription);
     animeCardContentContainer.appendChild(animeAdditionalInfoContainer);
     animeCard.appendChild(animeCardContentContainer);
-
-    parentContainer.appendChild(animeCard);
+    slide.appendChild(animeCard);
+    parentContainer.appendChild(slide);
   });
+  if (window.swiper) {
+    window.swiper.update();
+  }
 };

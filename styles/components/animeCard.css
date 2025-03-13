@@ -8,7 +8,7 @@
   color: white;
   padding: 20px;
   width: 300px;
-  height: 400px;
+  height: 80%;
   display: flex;
   justify-content: start;
   transition: 0.3s ease-in-out;
@@ -31,6 +31,7 @@
 }
 .anime-card:hover .anime-card_description {
   -webkit-line-clamp: 8;
+  line-clamp: 8;
 }
 
 .anime-card_container {
@@ -60,6 +61,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   overflow: hidden;
   height: 30%;
 }

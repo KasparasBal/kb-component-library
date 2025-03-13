@@ -1,0 +1,16 @@
+.swiper {
+  height: 35vh;
+  width: 100%;
+}
+.swiper-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-pagination-bullet-active {
+  background: #5046e5 !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #5046e5 !important;
+}
