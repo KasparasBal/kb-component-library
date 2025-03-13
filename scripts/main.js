@@ -1,10 +1,11 @@
 import { fetchAnime, fetchTrendingAnime } from "./api.js";
 import { animeCards } from "./components/animeCard.js";
 
-const swiperWrapper = document.querySelector(".swiper-wrapper");
-
-// First add the cards
-await animeCards(fetchAnime, swiperWrapper);
+const swiperWrapper1 = document.querySelector(".swiper-wrapper-1");
+const swiperWrapper2 = document.querySelector(".swiper-wrapper-2");
+//Add Cards
+await animeCards(fetchAnime, swiperWrapper1);
+await animeCards(fetchTrendingAnime, swiperWrapper2);
 
 // Then initialize swiper
 const swiper = new Swiper(".swiper", {
